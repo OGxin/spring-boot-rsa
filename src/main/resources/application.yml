@@ -1,0 +1,22 @@
+rsa:
+  encrypt:
+    open: true #是否开启加密
+    showLog: true #是否打印加解密log
+    publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDV9ZTo2vK0Jm5qsNCG6GSbJaKC
+               CYMHb1O9vRm1Z1+ytGhL80Krmh3gKDZoCFBUV6w59/ftz19XjT+84ctJLrUlz5N5
+               WqnrSQpg4vPR8Jv1EZS4IkMCvBFSDGR2rP8Muf0sZKBCg9okEdnfxHxUT2ZnIFUY
+               PNIIHjOcv55WSuDe1QIDAQAB
+    privateKey: MIICeQIBADANBgkqhkiG9w0BAQEFAASCAmMwggJfAgEAAoGBANX1lOja8rQmbmqw
+                0IboZJslooIJgwdvU729GbVnX7K0aEvzQquaHeAoNmgIUFRXrDn39+3PX1eNP7zh
+                y0kutSXPk3laqetJCmDi89Hwm/URlLgiQwK8EVIMZHas/wy5/SxkoEKD2iQR2d/E
+                fFRPZmcgVRg80ggeM5y/nlZK4N7VAgMBAAECgYEA0+mOeSsSI5fE2OsTPetCad/W
+                mtDs9BoxaMW4htFCGW9RtZfUOr5ERNXPPS6u0TqcnDWbW/B+T+rYbC1++JbIVkEr
+                8PVUe+7OWfrGSHN+VrMfAe42S9UPzQBTrUhK/+5r1j1hgRQC3xByPFC/Fi/WebIl
+                MqSUIs4ktq75XE2RTIECQQDrBcY+5x1QVZuW3aTbpBVX3xbrNSuB2jZdUpQnaRha
+                93QY2fcpASE1X2tMr7wWqHzKClxTR1OLgnpSENGoItalAkEA6Q6D+Trsb+n8pEuc
+                hbK+fPln5aydb4nd/hZuBr+DxkRq82yBVVOPdPYF3l4A26+0DOxuhofQHcOw+nIA
+                EaWgcQJBAIQGqmeLzZvje5Q0zvfUJWlHmchoBhjcTM4AJdo938C6Yi3TxFT0nYMu
+                J0jdL/xKik+1okfmObiVg8G2URDzAUECQQChBi93Jxgvpwqw9bEay0pEDQqVLPPG
+                GgqwwQyaSv6gIauHrwOZUde/pzCc2HRdVYPgngcrmnDX79q638NebgJxAkEAqjrT
+                RmIb/AIomKH2dWNVbmhEk4gBD3dK58lF1EA915ypgrcSlKQt+5JQarQs9a/iWaBS
+                Z6cuGMPuYqvWqpm0Tw==

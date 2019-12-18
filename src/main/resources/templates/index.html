@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.bootcss.com/jsencrypt/3.0.0-beta.1/jsencrypt.js"></script>
+</head>
+<body>
+
+<h3>加解密系统</h3>
+
+<h3 style="color: red;">${msg!""}</h3>
+<div>
+    <button onclick="btn();"> 提交 </button>
+</div>
+</body>
+</html>
+<script>
+    var PUBLIC_KEY = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDV9ZTo2vK0Jm5qsNCG6GSbJaKC\n' +
+        '               CYMHb1O9vRm1Z1+ytGhL80Krmh3gKDZoCFBUV6w59/ftz19XjT+84ctJLrUlz5N5\n' +
+        '               WqnrSQpg4vPR8Jv1EZS4IkMCvBFSDGR2rP8Muf0sZKBCg9okEdnfxHxUT2ZnIFUY\n' +
+        '               PNIIHjOcv55WSuDe1QIDAQAB';
+    //使用公钥加密
+    var encrypt = new JSEncrypt();
+    //encrypt.setPrivateKey('-----BEGIN RSA PRIVATE KEY-----'+PRIVATE_KEY+'-----END RSA PRIVATE KEY-----');
+    encrypt.setPublicKey(PUBLIC_KEY);
+    function btn(){
+        var str = JSON.stringify({name:"张三" , password : "123456"});
+        var encrypted = encrypt.encrypt(str);
+        console.log('加密后数据:%o', encrypted);
+        $.ajax({
+            url : "login",
+            type : "post",
+            contentType: 'application/json',
+            data: encrypted,
+        });
+    }
+</script>
